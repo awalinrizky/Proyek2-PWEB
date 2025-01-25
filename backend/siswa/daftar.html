@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Siswa</title>
+    <link rel="stylesheet" href="../assets/css/adminlte.min.css">
+    <script src="../assets/js/adminlte.min.js"></script>
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <a href="#" class="brand-link">SIS NF</a>
+            <div class="sidebar">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" role="menu">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Dashboard</a></li>
+                        <li class="nav-item"><a href="../pegawai/daftar.html" class="nav-link">Daftar Pegawai</a></li>
+                        <li class="nav-item"><a href="../pegawai/kelola.html" class="nav-link">Kelola Pegawai</a></li>
+                        <li class="nav-item"><a href="daftar.html" class="nav-link active">Daftar Siswa</a></li>
+                        <li class="nav-item"><a href="kelola.html" class="nav-link">Kelola Siswa</a></li>
+                        <li class="nav-item"><a href="../login.html" class="nav-link">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Content Wrapper -->
+        <div class="content-wrapper">
+            <section class="content">
+                <div class="container-fluid">
+                    <h1 class="my-4">Daftar Siswa</h1>
+
+                    <!-- Tabel Daftar Siswa -->
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>NIS</th>
+                                <th>Nama Lengkap</th>
+                                <th>Umur</th>
+                                <th>Kehadiran</th>
+                                <th>Status Aktif</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Data Siswa, bisa diisi secara dinamis menggunakan PHP -->
+                            <tr>
+                                <td>1</td>
+                                <td>12345</td>
+                                <td>Andi Pratama</td>
+                                <td>17</td>
+                                <td>95%</td>
+                                <td><input type="checkbox" checked></td>
+                                <td>
+                                    <a href="kelola.html?id=1" class="btn btn-warning btn-sm">Edit</a>
+                                    <a href="#" class="btn btn-danger btn-sm">Hapus</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>67890</td>
+                                <td>Siti Fatimah</td>
+                                <td>16</td>
+                                <td>98%</td>
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <a href="kelola.html?id=2" class="btn btn-warning btn-sm">Edit</a>
+                                    <a href="#" class="btn btn-danger btn-sm">Hapus</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

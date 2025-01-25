@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Siswa</title>
+    <link rel="stylesheet" href="../assets/css/adminlte.min.css">
+    <script src="../assets/js/adminlte.min.js"></script>
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <a href="#" class="brand-link">SIS NF</a>
+            <div class="sidebar">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" role="menu">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Dashboard</a></li>
+                        <li class="nav-item"><a href="../pegawai/daftar.html" class="nav-link">Daftar Pegawai</a></li>
+                        <li class="nav-item"><a href="../pegawai/kelola.html" class="nav-link">Kelola Pegawai</a></li>
+                        <li class="nav-item"><a href="daftar.html" class="nav-link">Daftar Siswa</a></li>
+                        <li class="nav-item"><a href="kelola.html" class="nav-link active">Kelola Siswa</a></li>
+                        <li class="nav-item"><a href="../login.html" class="nav-link">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- Content Wrapper -->
+        <div class="content-wrapper">
+            <section class="content">
+                <div class="container-fluid">
+                    <h1 class="my-4">Kelola Siswa</h1>
+
+                    <form action="simpan-siswa.php" method="POST">
+                        <div class="form-group">
+                            <label for="nama">Nama Siswa</label>
+                            <input type="text" class="form-control" id="nama" name="nama" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tempat_lahir">Tempat Lahir</label>
+                            <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tgl_lahir">Tanggal Lahir</label>
+                            <input type="date" class="form-control" id="tgl_lahir" name="tgl_lahir" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select class="form-control" id="gender" name="gender" required>
+                                <option value="Laki-laki">Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="nik">NIK</label>
+                            <input type="text" class="form-control" id="nik" name="nik" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="alamat">Alamat</label>
+                            <input type="text" class="form-control" id="alamat" name="alamat" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hp_wali">No HP Wali</label>
+                            <input type="text" class="form-control" id="hp_wali" name="hp_wali" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="kelas">Kelas</label>
+                            <input type="text" class="form-control" id="kelas" name="kelas" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="status">Status Aktif</label>
+                            <select class="form-control" id="status" name="status" required>
+                                <option value="Aktif">Aktif</option>
+                                <option value="Tidak Aktif">Tidak Aktif</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Simpan</button>
+                        <button type="reset" class="btn btn-secondary">Batal</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

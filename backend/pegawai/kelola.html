@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Pegawai</title>
+    <link rel="stylesheet" href="../assets/css/adminlte.min.css">
+    <script src="../assets/js/adminlte.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <!-- <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <a href="#" class="brand-link">SIS NF</a>
+            <div class="sidebar">
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" role="menu">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Dashboard</a></li>
+                        <li class="nav-item"><a href="daftar.html" class="nav-link">Daftar Pegawai</a></li>
+                        <li class="nav-item"><a href="kelola.html" class="nav-link active">Kelola Pegawai</a></li>
+                        <li class="nav-item"><a href="../siswa/daftar.html" class="nav-link">Daftar Siswa</a></li>
+                        <li class="nav-item"><a href="../login.html" class="nav-link">Logout</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside> --> -->
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Kelola Pegawai</title>
+                <script src="https://cdn.tailwindcss.com"></script>
+            </head>
+            <body class="bg-gray-100 font-sans">
+                <div class="flex h-screen">
+                    <!-- Sidebar -->
+                    <aside class="w-64 bg-gray-800 text-white flex flex-col">
+                        <div class="p-4 text-center text-lg font-bold">SIS NF</div>
+                        <div class="p-4 border-t border-gray-700">Admin</div>
+                        <nav class="flex-grow">
+                            <ul class="space-y-2 p-4">
+                                <li><a href="../index.html" class="block px-4 py-2 rounded hover:bg-gray-700">Dashboard</a></li>
+                                <li><a href="daftar.html" class="block px-4 py-2 rounded hover:bg-gray-700">Profil</a></li>
+                                <li><a href="kelola.html" class="block px-4 py-2 rounded hover:bg-gray-700">Pegawai</a></li>
+                                <li><a href="../siswa/daftar.html" class="block px-4 py-2 rounded hover:bg-gray-700">Siswa</a></li>
+                                <li><a href="#" class="block px-4 py-2 rounded hover:bg-gray-700">Kelas</a></li>
+                            </ul>
+                        </nav>
+                        <div class="p-4 border-t border-gray-700">
+                            <a href="#" class="block px-4 py-2 rounded hover:bg-gray-700">Logout</a>
+                        </div>
+                    </aside>
+            
+                    <!-- Main Content -->
+                    <main class="flex-grow p-6">
+                        <header class="mb-6">
+                            <h1 class="text-2xl font-bold">Kelola Pegawai</h1>
+                            <a href="#" class="text-blue-500 hover:underline">Home</a> / <span>Create Pegawai</span>
+                        </header>
+            
+                        <form class="bg-white p-6 rounded shadow">
+                            <div class="mb-4">
+                                <label for="nama" class="block text-sm font-medium text-gray-700">Nama Pegawai</label>
+                                <input type="text" id="nama" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+            
+                            <div class="mb-4">
+                                <label class="block text-sm font-medium text-gray-700">Tempat, Tgl Lahir</label>
+                                <div class="flex space-x-4">
+                                    <input type="text" placeholder="Tempat" class="mt-1 block w-1/2 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                                    <input type="date" class="mt-1 block w-1/2 border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                            </div>
+            
+                            <div class="mb-4">
+                                <label class="block text-sm font-medium text-gray-700">Gender</label>
+                                <div class="flex items-center space-x-4">
+                                    <label class="flex items-center">
+                                        <input type="radio" name="gender" value="L" class="text-blue-500 focus:ring-blue-500">
+                                        <span class="ml-2">L</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="radio" name="gender" value="P" class="text-blue-500 focus:ring-blue-500">
+                                        <span class="ml-2">P</span>
+                                    </label>
+                                </div>
+                            </div>
+            
+                            <div class="mb-4">
+                                <label for="nik" class="block text-sm font-medium text-gray-700">NIK</label>
+                                <input type="text" id="nik" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+            
+                            <div class="mb-4">
+                                <label for="alamat" class="block text-sm font-medium text-gray-700">Alamat</label>
+                                <textarea id="alamat" rows="3" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            </div>
+            
+                            <div class="mb-4">
+                                <label for="jabatan" class="block text-sm font-medium text-gray-700">Jabatan</label>
+                                <select id="jabatan" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                                    <option>Kepala Sekolah</option>
+                                    <option>Guru</option>
+                                    <option>Staff Administrasi</option>
+                                </select>
+                            </div>
+            
+                            <div class="mb-4">
+                                <label for="telpon" class="block text-sm font-medium text-gray-700">Telpon/HP</label>
+                                <input type="text" id="telpon" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+            
+                            <div class="flex space-x-4">
+                                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Simpan</button>
+                                <button type="reset" class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">Batal</button>
+                            </div>
+                        </form>
+                    </main>
+                </div>
+            </body>
+            </html>
